@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rahul Patel — Full-stack engineer</title>
+<meta name="description" content="Rahul Patel, Software Engineer 3 at JPMorgan Chase. Backend and full-stack engineer building scalable systems, AI products and developer communities.">
+<meta property="og:title" content="Rahul Patel — Full-stack engineer">
+<meta property="og:description" content="From problem statement to production: scalable systems, AI products, mentoring.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231f4fd8'/><text x='50' y='72' font-size='64' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='900'>R</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbfcff;--grid:#dde6f5;--ink:#0b1f3a;--mute:#4d6082;--line:#0b1f3a;--accent:#1f4fd8;--hi:#ffb000;--f:'Archivo',system-ui,-apple-system,'Segoe UI',sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0c2347;--grid:#17386a;--ink:#eaf1ff;--mute:#a4b8de;--line:#8fb4ff;--accent:#8fb4ff;--hi:#ffc233}}
+:root[data-theme=dark]{--bg:#0c2347;--grid:#17386a;--ink:#eaf1ff;--mute:#a4b8de;--line:#8fb4ff;--accent:#8fb4ff;--hi:#ffc233}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background-color:var(--bg);background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:32px 32px;color:var(--ink);font:400 1.05rem/1.6 var(--f);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--hi);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;background:var(--hi);color:#0b1f3a;padding:8px 14px;z-index:9}
+.nav{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:2px solid var(--line);display:flex;justify-content:space-between;align-items:center;padding:12px 24px;gap:12px;flex-wrap:wrap}
+.nav nav a{margin-right:20px;text-decoration:none;font-weight:600}
+.nav nav a:hover{text-decoration:underline;text-decoration-color:var(--hi);text-decoration-thickness:3px;text-underline-offset:5px}
+.theme{font:inherit;font-weight:600;background:none;border:2px solid var(--line);color:var(--ink);padding:4px 14px;cursor:pointer}
+.hero{padding:72px 0 64px;display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:end}
+h1{font-size:clamp(3rem,10vw,7.4rem);line-height:.88;font-weight:900;font-stretch:125%;letter-spacing:-.03em}
+.hero .tag{font-size:clamp(1.25rem,2.6vw,1.7rem);font-weight:600;line-height:1.25;margin-top:28px;max-width:24ch}
+.hero .sub{color:var(--mute);margin-top:14px;max-width:46ch}
+.btns{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:10px 20px;border:2px solid var(--line);font-weight:700;text-decoration:none;background:var(--bg)}
+.btn.p{background:var(--hi);color:#0b1f3a;border-color:var(--hi)}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:3px 3px 0 var(--line)}
+.block{border:2px solid var(--line);background:var(--bg)}
+.block dl{display:grid;grid-template-columns:104px 1fr}
+.block dt,.block dd{padding:10px 14px;border-top:1px solid var(--line)}
+.block dt{color:var(--mute);font-size:.9rem;border-right:1px solid var(--line)}
+.block dd{font-weight:600}
+.block dt:first-of-type,.block dd:first-of-type{border-top:0}
+.block h3{padding:10px 14px;background:var(--ink);color:var(--bg);font-size:1.15rem;font-weight:800}
+.block h3 small{font-weight:400;opacity:.8;font-size:.9rem;margin-left:8px}
+section{padding:64px 0}
+h2{font-size:clamp(1.9rem,4.4vw,3rem);font-weight:800;font-stretch:112%;line-height:1.05;letter-spacing:-.02em;margin-bottom:12px;max-width:20ch}
+h2::after{content:"";display:block;width:64px;height:6px;background:var(--hi);margin-top:14px}
+.intro{color:var(--mute);max-width:58ch;margin-bottom:32px}
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:24px}
+.projects .big{grid-column:1/-1}
+.side{margin-top:24px;padding:16px 20px;border:2px dashed var(--line);background:var(--bg)}
+.side b{font-weight:800}
+.rows>div{display:grid;grid-template-columns:230px 1fr;gap:8px 28px;padding:18px 0;border-top:2px solid var(--line)}
+.rows>div:last-child{border-bottom:2px solid var(--line)}
+.rows h3{font-size:1.1rem;font-weight:800}.rows h3 span{display:block;color:var(--mute);font-weight:400;font-size:.95rem}
+.stack div{display:grid;grid-template-columns:130px 1fr;padding:12px 0;border-top:1px solid var(--line)}
+.stack b{font-weight:800}
+.nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));margin-bottom:32px;border:2px solid var(--line);background:var(--bg)}
+.nums div{padding:16px;border-right:1px solid var(--line)}.nums div:last-child{border-right:0}
+.nums b{display:block;font-size:2.8rem;line-height:1;font-weight:900;font-stretch:125%}
+.nums span{color:var(--mute);font-size:.92rem}
+.pr{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:24px}
+.pr div{border-left:6px solid var(--hi);padding-left:16px}
+.pr b{display:block;font-size:1.2rem;font-weight:800;line-height:1.25}
+.pr span{color:var(--mute)}
+.cta h2{font-size:clamp(2.4rem,7vw,5rem);font-stretch:125%;font-weight:900;max-width:12ch}
+footer{border-top:2px solid var(--line);padding:20px 0 40px;color:var(--mute);background:var(--bg)}
+@media (max-width:760px){.hero{grid-template-columns:1fr}.rows>div{grid-template-columns:1fr}.stack div{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <nav aria-label="Primary"><a href="#work">Projects</a><a href="#experience">Experience</a><a href="#stack">Stack</a><a href="#community">Mentoring</a><a href="#contact">Contact</a></nav>
+  <button class="theme" id="theme" aria-label="Switch between light and dark theme">Light / Dark</button>
+</header>
+<main id="main" class="wrap">
+
+<div class="hero">
+  <div>
+    <h1>Rahul<br>Patel</h1>
+    <p class="tag">I build software from the first sketch to production.</p>
+    <p class="sub">Full-stack engineer. I've built a real-time trading backend and an AI writing platform, and I help other people ship their first products.</p>
+    <div class="btns">
+      <a class="btn p" href="#contact">Get in touch</a>
+      <a class="btn" href="https://github.com/YOUR-USERNAME">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/YOUR-HANDLE">LinkedIn</a>
+      <a class="btn" href="resume.pdf">Resume</a>
+    </div>
+  </div>
+  <div class="block">
+    <h3>Rahul Patel</h3>
+    <dl>
+      <dt>Role</dt><dd>Software Engineer 3, JPMorgan Chase &amp; Co.</dd>
+      <dt>Strength</dt><dd>Backend systems, full-stack apps, AI-powered products</dd>
+      <dt>Stack</dt><dd>Java, Spring Boot, React, Kafka, AWS</dd>
+      <dt>Also</dt><dd>Mentor and hackathon organizer</dd>
+    </dl>
+  </div>
+</div>
+
+<section id="work">
+  <h2>Things I've built</h2>
+  <p class="intro">Three products I worked on, and what I did in each.</p>
+  <div class="projects">
+    <div class="block big">
+      <h3>MarketWolf <small>Real-time options trading platform</small></h3>
+      <dl>
+        <dt>My role</dt><dd>Backend engineer at FNO Tech</dd>
+        <dt>What I built</dt><dd>10+ Spring Boot microservices covering trading features, rewards, social features, analytics integrations and admin apps</dd>
+        <dt>Stack</dt><dd>Spring Boot, Kafka, Redis, AWS</dd>
+      </dl>
+    </div>
+    <div class="block">
+      <h3>Manuscripts.ai <small>AI writing assistant</small></h3>
+      <dl>
+        <dt>My role</dt><dd>Full-stack developer at Creative Mantra</dd>
+        <dt>What I built</dt><dd>The microservices that pass user text through AI/ML models and return suggestions</dd>
+        <dt>Stack</dt><dd>Spring Boot, Express, React, NLP</dd>
+      </dl>
+    </div>
+    <div class="block">
+      <h3>Form Builder <small>Side project</small></h3>
+      <dl>
+        <dt>What it does</dt><dd>Lets organizations build structured forms and collect submissions at scale</dd>
+        <dt>Stack</dt><dd>React, Spring Boot, PostgreSQL JSONB</dd>
+      </dl>
+    </div>
+  </div>
+  <p class="side"><b>Also:</b> Sampark, a community and events platform I built on the side.</p>
+</section>
+
+<section id="experience">
+  <h2>Where I've worked</h2>
+  <div class="rows">
+    <div><h3>JPMorgan Chase &amp; Co.<span>Software Engineer 3</span></h3><p>Enterprise-scale engineering. I also mentored a team at Code for Good 2024.</p></div>
+    <div><h3>FNO Tech<span>Backend Engineer</span></h3><p>Backend of MarketWolf: 10+ microservices with Redis caching and Kafka messaging.</p></div>
+    <div><h3>Creative Mantra<span>Full-Stack Developer</span></h3><p>Manuscripts.ai, from service architecture to the React front end.</p></div>
+    <div><h3>Technosys<span>Software Developer</span></h3><p>APIs and web apps for order management and CRM, using Spring Boot, React, Angular and Redux.</p></div>
+  </div>
+</section>
+
+<section id="stack">
+  <h2>What I work with</h2>
+  <div class="stack">
+    <div><b>Backend</b><span>Java, Spring Boot, Node.js, REST APIs, microservices</span></div>
+    <div><b>Frontend</b><span>React, Next.js, Angular, TypeScript</span></div>
+    <div><b>Data</b><span>PostgreSQL, MySQL, Redis, Cassandra, DynamoDB</span></div>
+    <div><b>Cloud</b><span>AWS (ECS, Fargate, RDS, S3, Lambda, API Gateway), Terraform, Docker</span></div>
+    <div><b>Messaging &amp; CI</b><span>Kafka, GitHub Actions, Nginx</span></div>
+    <div><b>AI</b><span>LLMs, RAG, agents, LangChain, Ollama, AI-assisted development</span></div>
+  </div>
+</section>
+
+<section id="community">
+  <h2>I help people build too</h2>
+  <p class="intro">I organized an AI + No-Code Hackathon where teams went from a problem statement to a working product in one day.</p>
+  <div class="nums">
+    <div><b>13</b><span>teams</span></div><div><b>58</b><span>participants</span></div><div><b>10</b><span>hours</span></div><div><b>6</b><span>problem statements</span></div><div><b>13</b><span>products built</span></div>
+  </div>
+  <div class="rows">
+    <div><h3>Code for Good 2024<span>JPMorgan Chase</span></h3><p>Mentored a team through technical decisions and shaping the solution, until it worked as a product.</p></div>
+    <div><h3>Prerak 2.0<span>Full-stack training</span></h3><p>Taught a structured path through HTML/CSS, JavaScript, TypeScript, React and Node.js.</p></div>
+    <div><h3>AI + No-Code Hackathon<span>Organizer and mentor</span></h3><p>Coached teams on picking the problem, building the MVP and pitching it.</p></div>
+  </div>
+</section>
+
+<section id="how">
+  <h2>How I work</h2>
+  <div class="pr">
+    <div><b>Build before you overthink.</b><span>An idea is worth more once people can use it.</span></div>
+    <div><b>Solve the problem, not the technology.</b><span>The right architecture for the wrong problem is wasted.</span></div>
+    <div><b>Learn by building.</b><span>Reading gives knowledge. Building gives understanding.</span></div>
+    <div><b>Share what you learn.</b><span>It matters more when it helps someone else grow.</span></div>
+  </div>
+  <p class="intro" style="margin-top:36px">Right now I'm exploring AI agents, AI-assisted engineering and simpler cloud architecture. Away from the screen: hiking, travel, badminton and table tennis.</p>
+</section>
+
+<section id="contact" class="cta">
+  <h2>Have an idea worth building?</h2>
+  <p class="intro">Send me the problem. I like ambitious ideas and people who want to build something meaningful.</p>
+  <div class="btns">
+    <a class="btn p" href="mailto:you@example.com">Email me</a>
+    <a class="btn" href="https://github.com/YOUR-USERNAME">GitHub</a>
+    <a class="btn" href="https://www.linkedin.com/in/YOUR-HANDLE">LinkedIn</a>
+  </div>
+</section>
+</main>
+<footer><div class="wrap">© Rahul Patel</div></footer>
+<script>
+(function(){
+  var r=document.documentElement,b=document.getElementById('theme');
+  try{var s=localStorage.getItem('theme');if(s)r.dataset.theme=s}catch(e){}
+  b.onclick=function(){
+    var dark=r.dataset.theme?r.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches;
+    r.dataset.theme=dark?'light':'dark';
+    try{localStorage.setItem('theme',r.dataset.theme)}catch(e){}
+  };
+})();
+</script>
+</body>
+</html>
